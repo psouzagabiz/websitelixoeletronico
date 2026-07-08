@@ -1,0 +1,19 @@
+<footer>
+  <p>Feito com carinho para Posse - GO. Cuidar do meio ambiente é coisa de todo mundo.</p>
+  <p class="rodape-admin">
+    <% if (usuarioLogado) { %>
+      Logado como <%= usuarioLogado.nome %> ·
+      <form action="/logout" method="POST" class="form-logout">
+        <button type="submit">Sair</button>
+      </form>
+    <% } else { %>
+      <a href="/login">Área do administrador</a>
+    <% } %>
+  </p>
+</footer>
+
+<script>
+  document.getElementById('botao-menu').addEventListener('click', function () {
+    document.getElementById('menu-principal').classList.toggle('aberto');
+  });
+</script>

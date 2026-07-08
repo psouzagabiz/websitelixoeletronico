@@ -1,0 +1,17 @@
+<header>
+  <div class="header-topo">
+    <a href="/" class="marca">🌱 Descarte Certo Posse</a>
+
+    <button id="botao-menu" aria-label="Abrir menu">☰</button>
+
+    <nav id="menu-principal">
+      <a href="/" class="<%= pagina === 'inicio' ? 'ativo' : '' %>">Início</a>
+      <a href="/sobre" class="<%= pagina === 'sobre' ? 'ativo' : '' %>">Sobre</a>
+      <a href="/dicas" class="<%= pagina === 'dicas' ? 'ativo' : '' %>">Dicas</a>
+      <a href="/contato" class="<%= pagina === 'contato' ? 'ativo' : '' %>">Contato</a>
+      <% if (usuarioLogado) { %>
+        <a href="/admin" class="<%= pagina === 'admin' ? 'ativo' : '' %>">Área do admin</a>
+      <% } %>
+    </nav>
+  </div>
+</header>
