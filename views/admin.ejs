@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('partials/head') %>
+<body>
+<%- include('partials/header') %>
+
+<main class="pagina-admin">
+  <h1>Cadastrar novo ponto de coleta</h1>
+  <p class="subtitulo-auth">Clique no mapa para marcar o local, ou digite a latitude e longitude à mão.</p>
+
+  <div id="map-admin"></div>
+
+  <form action="/admin/pontos" method="POST" class="form-auth form-ponto">
+    <label for="nome">Nome do local</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="tipo">Tipo</label>
+    <input type="text" id="tipo" name="tipo" placeholder="Ex: Escola, Órgão público, Comércio" required>
+
+    <label for="endereco">Endereço</label>
+    <input type="text" id="endereco" name="endereco" required>
+
+    <label for="recebe">O que recebe</label>
+    <input type="text" id="recebe" name="recebe" placeholder="Ex: Pilhas e celulares" required>
+
+    <div class="campos-coordenadas">
+      <div>
+        <label for="lat">Latitude</label>
+        <input type="text" id="lat" name="lat" required>
+      </div>
+      <div>
+        <label for="lng">Longitude</label>
+        <input type="text" id="lng" name="lng" required>
+      </div>
+    </div>
+
+    <button type="submit">Salvar ponto</button>
+  </form>
+
+  <h2>Pontos cadastrados</h2>
+  <table class="tabela-pontos">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Endereço</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% pontos.forEach(function (ponto) { %>
+        <tr>
+          <td><%= ponto.nome %></td>
+          <td><%= ponto.tipo %></td>
+          <td><%= ponto.endereco %></td>
+          <td>
+            <form action="/admin/pontos/<%= ponto.id %>/excluir" method="POST"
+                  onsubmit="return confirm('Excluir este ponto?');">
+              <button type="submit" class="botao-excluir">Excluir</button>
+            </form>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</main>
+
+<%- include('partials/footer') %>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/admin.js"></script>
+</body>
+</html>

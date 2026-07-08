@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('partials/head') %>
+<body>
+<%- include('partials/header') %>
+
+<section class="hero">
+  <div class="hero-conteudo">
+    <h1>Onde jogar seu lixo eletrônico em Posse</h1>
+    <p>Pilhas, celulares, computadores e outros eletrônicos não são lixo comum. Encontre no mapa abaixo o ponto de coleta mais perto de você.</p>
+  </div>
+</section>
+
+<main>
+  <section id="mapa">
+    <div id="map"></div>
+  </section>
+
+  <section class="pontos">
+    <h2>Pontos de coleta</h2>
+    <p class="aviso">
+      Os pontos abaixo são locais públicos de Posse. Antes de levar uma grande quantidade
+      de material, confirme com o local pelo telefone se ele recebe o item que você quer descartar.
+    </p>
+    <div id="lista-pontos" class="lista-pontos"></div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const pontosDeColeta = <%- JSON.stringify(pontos) %>;
+</script>
+<script src="/script.js"></script>
+</body>
+</html>
