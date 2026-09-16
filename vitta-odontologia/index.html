@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitta Odontologia | Posse - GO</title>
+<meta name="description" content="Referência em odontologia em Posse - GO. Clareamento, implantes, canal, extrações, limpeza e restauração. Cuidado integrado e especializado. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --escuro: #1f1613;
+    --vinho: #7a2a3f;
+    --vinho-claro: #b6607a;
+    --dourado: #cda869;
+    --texto: #2a1f1a;
+    --texto-claro: #7d6f64;
+    --fundo: #f7f2ec;
+    --branco: #ffffff;
+    --sombra: 0 10px 30px rgba(31, 22, 19, 0.14);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  body {
+    font-family: 'Work Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, 'Times New Roman', serif; line-height: 1.2; text-wrap: balance; }
+
+  a { color: inherit; text-decoration: none; }
+
+  img, svg { max-width: 100%; display: block; }
+
+  :focus-visible {
+    outline: 2px solid var(--dourado);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  section[id], #topo { scroll-margin-top: 84px; }
+
+  .icon-line { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .icon-solid { fill: currentColor; stroke: none; }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Header ---------- */
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247, 242, 236, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #e9ddce;
+    transition: box-shadow 0.25s ease;
+  }
+
+  header.rolou { box-shadow: 0 8px 24px rgba(31, 22, 19, 0.08); }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .logo-icone {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+  }
+
+  .logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .logo-texto .marca {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 3px;
+    color: var(--escuro);
+  }
+
+  .logo-texto .submarca {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--vinho);
+    text-transform: uppercase;
+  }
+
+  footer .logo-texto .marca { color: white; }
+  footer .logo-texto .submarca { color: var(--dourado); }
+
+  nav.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  nav.menu-principal a {
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+    transition: color 0.2s;
+    padding-bottom: 2px;
+  }
+
+  nav.menu-principal a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--vinho);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  nav.menu-principal a:hover { color: var(--vinho); }
+  nav.menu-principal a:hover::after { transform: scaleX(1); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s;
+  }
+
+  .btn svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+  .btn-whatsapp {
+    background: #25d366;
+    color: white;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  }
+
+  .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(37, 211, 102, 0.45); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--escuro);
+    border: 1.5px solid var(--escuro);
+  }
+
+  .btn-outline:hover { background: var(--escuro); color: white; }
+
+  .btn-instagram {
+    background: linear-gradient(135deg, #f6c453, #c0327c 45%, #6b3fa0 85%);
+    color: white;
+    box-shadow: 0 8px 20px rgba(150, 50, 120, 0.3);
+  }
+
+  .btn-instagram:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(150, 50, 120, 0.4); }
+
+  #botao-menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--escuro);
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  #botao-menu-mobile svg { width: 24px; height: 24px; }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    position: relative;
+    background: radial-gradient(circle at 15% 20%, #5a2033 0%, var(--escuro) 55%, #120c0a 100%);
+    color: white;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 85% 15%, rgba(205, 168, 105, 0.22), transparent 45%),
+      radial-gradient(circle at 90% 80%, rgba(122, 42, 63, 0.35), transparent 40%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    padding: 90px 24px 70px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .selo-anos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: var(--dourado);
+  }
+
+  .selo-anos svg { width: 15px; height: 15px; }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 18px;
+  }
+
+  .hero h1 span { color: var(--dourado); }
+
+  .hero p.subtitulo {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 34px; }
+
+  .hero-avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+  }
+
+  .estrelas { display: inline-flex; align-items: center; gap: 3px; color: var(--dourado); }
+  .estrelas svg { width: 16px; height: 16px; }
+  .resumo-nota .estrelas { justify-content: center; margin: 10px 0; }
+  .resumo-nota .estrelas svg { width: 20px; height: 20px; }
+
+  .hero-avaliacao strong { font-size: 1.15rem; }
+
+  .hero-cartao {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-cartao h3 {
+    font-family: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dourado);
+    margin-bottom: 18px;
+  }
+
+  .info-linha {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+  }
+
+  .info-linha:last-child { border-bottom: none; }
+
+  .info-linha .icone { flex-shrink: 0; color: var(--dourado); }
+  .info-linha .icone svg { width: 20px; height: 20px; }
+
+  .dica-pico {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* ---------- Faixa de destaques ---------- */
+
+  .faixa-destaques {
+    background: var(--branco);
+    border-bottom: 1px solid #e9ddce;
+  }
+
+  .faixa-destaques .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 34px 24px;
+  }
+
+  .destaque {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .destaque .icone {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #f3ead9;
+    color: var(--vinho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .destaque .icone svg { width: 22px; height: 22px; }
+
+  .destaque strong { display: block; font-size: 0.95rem; color: var(--escuro); }
+  .destaque span { font-size: 0.85rem; color: var(--texto-claro); }
+
+  /* ---------- Seções gerais ---------- */
+
+  section { padding: 80px 0; }
+
+  .cabecalho-secao {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 50px;
+  }
+
+  .rotulo {
+    display: inline-block;
+    color: var(--vinho);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .cabecalho-secao h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--escuro);
+    margin-bottom: 14px;
+  }
+
+  .cabecalho-secao p { color: var(--texto-claro); font-size: 1.05rem; }
+
+  /* ---------- Serviços ---------- */
+
+  .grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .card-servico {
+    background: var(--branco);
+    border-radius: 18px;
+    padding: 32px 26px;
+    box-shadow: var(--sombra);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #ece1d0;
+  }
+
+  .card-servico:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(31, 22, 19, 0.16); }
+
+  .card-servico .icone {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--vinho), var(--escuro));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .card-servico .icone svg { width: 26px; height: 26px; transition: transform 0.3s ease; }
+  .card-servico:hover .icone svg { transform: scale(1.12) rotate(-4deg); }
+
+  .card-servico h3 { font-size: 1.15rem; color: var(--escuro); margin-bottom: 8px; }
+  .card-servico p { color: var(--texto-claro); font-size: 0.95rem; }
+
+  /* ---------- Sobre ---------- */
+
+  .sobre {
+    background: var(--branco);
+  }
+
+  .sobre .container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .sobre-visual {
+    background: linear-gradient(160deg, var(--vinho) 0%, var(--escuro) 100%);
+    border-radius: 24px;
+    padding: 46px 34px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .marca-agua-dente {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    right: -30px;
+    bottom: -30px;
+    opacity: 0.08;
+    stroke-width: 0.9;
+  }
+
+  .par-estatisticas {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .estatistica .numero-grande {
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: 'Fraunces', Georgia, serif;
+    font-variant-numeric: tabular-nums;
+    color: var(--dourado);
+    line-height: 1;
+  }
+
+  .estatistica .numero-legenda {
+    font-size: 0.92rem;
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .citacao-clinica {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .citacao-clinica svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--dourado); }
+
+  .sobre-lista { display: grid; gap: 16px; }
+
+  .sobre-lista li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+
+  .sobre-lista li::before { content: "✓"; color: var(--dourado); font-weight: 700; }
+
+  .sobre-texto h2 { color: var(--escuro); font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 20px; }
+  .sobre-texto p { color: var(--texto-claro); margin-bottom: 16px; font-size: 1.03rem; }
+
+  /* ---------- Localização ---------- */
+
+  .card-local {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 38px;
+    box-shadow: var(--sombra);
+    border: 1px solid #ece1d0;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .card-local .tag {
+    display: inline-block;
+    background: #f3ead9;
+    color: var(--vinho);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+
+  .card-local h3 { color: var(--escuro); font-size: 1.4rem; margin-bottom: 16px; }
+
+  .lista-info-local { display: grid; gap: 14px; margin-bottom: 24px; }
+
+  .lista-info-local .info-linha { color: var(--texto); border: none; padding: 0; }
+  .lista-info-local .info-linha .icone { color: var(--vinho); }
+
+  .card-local .acoes { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .mapa-decorativo {
+    background: linear-gradient(160deg, #f3ead9, #ece1d0);
+    border-radius: 16px;
+    height: 100%;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vinho);
+  }
+
+  .mapa-decorativo svg { width: 70px; height: 70px; }
+
+  /* ---------- Avaliações e Instagram ---------- */
+
+  .avaliacoes { background: var(--branco); }
+
+  .resumo-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #f6eee0, #f7f2ec);
+    border-radius: 24px;
+    padding: 44px;
+    border: 1px solid #efe3ce;
+    margin-bottom: 28px;
+  }
+
+  .resumo-nota { text-align: center; }
+
+  .resumo-nota .valor {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variant-numeric: tabular-nums;
+    font-size: 3.4rem;
+    color: var(--escuro);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .resumo-nota .total { color: var(--texto-claro); font-size: 0.9rem; }
+
+  .resumo-barra { flex: 1; min-width: 260px; max-width: 420px; }
+
+  .resumo-barra p { color: var(--texto-claro); font-size: 1rem; margin-bottom: 6px; }
+
+  .card-instagram {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #2b1a20, #1f1613);
+    color: white;
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  .card-instagram .icone-insta {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f6c453, #c0327c 45%, #6b3fa0 85%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .card-instagram .icone-insta svg { width: 30px; height: 30px; color: white; }
+
+  .card-instagram .corpo { flex: 1; min-width: 240px; }
+
+  .card-instagram .corpo strong { font-size: 1.15rem; display: block; margin-bottom: 4px; }
+  .card-instagram .corpo .seguidores { color: var(--dourado); font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; display: block; }
+  .card-instagram .corpo p { color: rgba(255, 255, 255, 0.78); font-size: 0.95rem; font-style: italic; }
+
+  /* ---------- CTA final ---------- */
+
+  .cta-final {
+    background: radial-gradient(circle at 20% 30%, #5a2033, var(--escuro) 70%);
+    color: white;
+    text-align: center;
+    border-radius: 28px;
+    margin: 0 24px;
+    padding: 60px 30px;
+  }
+
+  .cta-final h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 14px; }
+  .cta-final p { color: rgba(255, 255, 255, 0.85); margin-bottom: 30px; font-size: 1.05rem; }
+
+  /* ---------- Rodapé ---------- */
+
+  footer {
+    background: #150e0c;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 60px 0 26px;
+    margin-top: 60px;
+  }
+
+  .footer-grade {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-grade h4 { color: white; font-size: 1rem; margin-bottom: 18px; }
+
+  .footer-grade .logo { color: white; margin-bottom: 14px; }
+
+  .footer-grade p, .footer-grade a { font-size: 0.9rem; color: rgba(255, 255, 255, 0.68); }
+
+  .footer-grade ul { list-style: none; display: grid; gap: 10px; }
+
+  .footer-grade a:hover { color: var(--dourado); }
+
+  .footer-baixo {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 22px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* ---------- Botão flutuante WhatsApp ---------- */
+
+  .whatsapp-flutuante {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 200;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+    animation: pulsar 2.4s infinite;
+  }
+
+  .whatsapp-flutuante svg { width: 27px; height: 27px; }
+
+  @keyframes pulsar {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+
+  .textura-grao {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- Revelação ao rolar ---------- */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visivel { opacity: 1; transform: translateY(0); }
+
+  .grade-servicos .reveal:nth-child(2) { transition-delay: 0.1s; }
+  .grade-servicos .reveal:nth-child(3) { transition-delay: 0.2s; }
+  .grade-servicos .reveal:nth-child(5) { transition-delay: 0.1s; }
+  .grade-servicos .reveal:nth-child(6) { transition-delay: 0.2s; }
+
+  /* ---------- Responsivo ---------- */
+
+  @media (max-width: 900px) {
+    .header-inner .btn-whatsapp { display: none; }
+    #botao-menu-mobile { display: block; }
+
+    nav.menu-principal {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 20px 24px;
+      gap: 16px;
+      box-shadow: var(--sombra);
+      opacity: 0;
+      transform: translateY(-8px);
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    }
+
+    nav.menu-principal.aberto {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .hero-inner { grid-template-columns: 1fr; padding-top: 50px; }
+    .faixa-destaques .container { grid-template-columns: repeat(2, 1fr); }
+    .grade-servicos { grid-template-columns: repeat(2, 1fr); }
+    .sobre .container { grid-template-columns: 1fr; }
+    .card-local { grid-template-columns: 1fr; }
+    .mapa-decorativo { min-height: 140px; }
+    .footer-grade { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .faixa-destaques .container { grid-template-columns: 1fr; }
+    .grade-servicos { grid-template-columns: 1fr; }
+    .resumo-google { flex-direction: column; }
+    .par-estatisticas { gap: 20px; }
+    .card-instagram { padding: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="textura-grao" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="dourado-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0dcae"/>
+      <stop offset="0.5" stop-color="#cda869"/>
+      <stop offset="1" stop-color="#9c7638"/>
+    </linearGradient>
+    <symbol id="marca-vitta" viewBox="0 0 40 40">
+      <path d="M7 6 L18 32 L20.5 25" fill="none" stroke="url(#dourado-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M33 6 L22 34 L18.5 24" fill="none" stroke="url(#dourado-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-7.2 7-12.2A7 7 0 0 0 5 8.8C5 13.8 12 21 12 21z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2C11.8 18.6 5.4 12.2 5 5.2A2 2 0 0 1 7 3.5z"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3.3 6.5L4 20l1.3-3.5A7.9 7.9 0 0 1 4 12z"/></symbol>
+    <symbol id="icon-tooth" viewBox="0 0 24 24"><path d="M12 4c-1.4 0-2.2.6-3.3.6S6.9 4 5.6 4C3.9 4 2.5 5.7 2.5 8c0 2.7 1.4 4.8 1.8 7.3.3 1.9.8 3.4 1.9 3.4s1.4-2.4 1.7-4.1c.2-.9.5-1.5 1.1-1.5s.9.6 1.1 1.5c.3 1.7.6 4.1 1.7 4.1s1.6-1.5 1.9-3.4c.4-2.5 1.8-4.6 1.8-7.3 0-2.3-1.4-4-3.1-4-1.3 0-2.1.6-3.1.6z"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 3c.7 3.8 2.6 5.7 6.3 6.3-3.7.6-5.6 2.5-6.3 6.3-.7-3.8-2.6-5.7-6.3-6.3 3.7-.6 5.6-2.5 6.3-6.3z"/><path d="M18.5 15.5c.3 1.7 1.1 2.5 2.8 2.8-1.7.3-2.5 1.1-2.8 2.8-.3-1.7-1.1-2.5-2.8-2.8 1.7-.3 2.5-1.1 2.8-2.8z"/></symbol>
+    <symbol id="icon-bridge" viewBox="0 0 24 24"><path d="M3 8c0-2.2 1.8-4 4-4s4 1.8 4 4v9c0 .8-.7 1.5-1.5 1.5S8 17.8 8 17v-4"/><path d="M13 8c0-2.2 1.8-4 4-4s4 1.8 4 4v9c0 .8-.7 1.5-1.5 1.5S18 17.8 18 17v-4"/></symbol>
+    <symbol id="icon-implant" viewBox="0 0 24 24"><path d="M9 3h6l-1 4H10L9 3z"/><path d="M9.5 7 8 21h8l-1.5-14"/><path d="M9.8 10h4.4M9.5 13h5M9.7 16h4.6"/></symbol>
+    <symbol id="icon-canal" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M9 6h6M9 10h6M9 14h6M9 18h6"/></symbol>
+    <symbol id="icon-extracao" viewBox="0 0 24 24"><path d="M6 15c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="12" cy="8" r="3"/><path d="M12 5V2M9.8 3.6 12 2l2.2 1.6"/></symbol>
+    <symbol id="icon-limpeza" viewBox="0 0 24 24"><path d="M12 3l7 3.2v5.6c0 4.4-3 7.3-7 8.9-4-1.6-7-4.5-7-8.9V6.2L12 3z"/><path d="M9 12l2.2 2.2L15.5 9.5"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 17.1 6.1 20.2l1.3-6.5-4.9-4.5 6.6-.7L12 2.5z"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24"><path d="M7 8c-2.2 0-4 1.8-4 4v4h5v-5H5c0-1.7 1.3-3 3-3V8z"/><path d="M16 8c-2.2 0-4 1.8-4 4v4h5v-5h-3c0-1.7 1.3-3 3-3V8z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="header-inner">
+    <a href="#topo" class="logo">
+      <svg class="logo-icone"><use href="#marca-vitta"/></svg>
+      <span class="logo-texto">
+        <span class="marca">VITTA</span>
+        <span class="submarca">Odontologia</span>
+      </span>
+    </a>
+    <nav class="menu-principal" id="menu-principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a href="https://wa.me/5562999377675?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Vitta%20Odontologia." class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <svg class="icon-line"><use href="#icon-message"/></svg> Agendar
+    </a>
+    <button id="botao-menu-mobile" aria-label="Abrir menu">
+      <svg class="icon-line"><use href="#icon-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="hero-inner container">
+    <div>
+      <span class="selo-anos"><svg class="icon-solid"><use href="#icon-star"/></svg> 5,0 no Google · referência em Posse - GO</span>
+      <h1>Odontologia também é <span>arte</span></h1>
+      <p class="subtitulo">Cuidado integrado e especializado, com cada caso planejado com técnica e sensibilidade — em Posse, GO.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/5562999377675?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Vitta%20Odontologia." class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg class="icon-line"><use href="#icon-message"/></svg> Agende agora via WhatsApp
+        </a>
+        <a href="#servicos" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:white;">Ver serviços</a>
+      </div>
+      <div class="hero-avaliacao">
+        <span class="estrelas">
+          <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+        </span>
+        <strong>5,0</strong> de avaliação no Google · 18 avaliações
+      </div>
+    </div>
+
+    <div class="hero-cartao">
+      <h3>Vitta Odontologia</h3>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-clock"/></svg></span>
+        <div>
+          Seg. a sex.: 08h às 12h e 14h às 19h
+          <br><span class="dica-pico">Costuma ficar mais movimentado por volta das 11h</span>
+        </div>
+      </div>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-pin"/></svg></span>
+        <div>
+          R. Dezenove de Julho, Qd. 12, Lt. 01, Sala 02<br>
+          St. Augusto José Valente I, Posse, GO, 73900-000
+        </div>
+      </div>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-phone"/></svg></span>
+        <div>(62) 99937-7675</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa-destaques">
+  <div class="container">
+    <div class="destaque">
+      <span class="icone"><svg class="icon-solid"><use href="#icon-star"/></svg></span>
+      <div><strong>5,0 / 5</strong><span>18 avaliações no Google</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-tooth"/></svg></span>
+      <div><strong>Cuidado integrado</strong><span>todas as especialidades</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-instagram"/></svg></span>
+      <div><strong>2,8 mil+</strong><span>seguidores no Instagram</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-pin"/></svg></span>
+      <div><strong>Posse - GO</strong><span>St. Augusto José Valente I</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Serviços</span>
+      <h2>Cuidado completo para o seu sorriso</h2>
+      <p>Tratamentos planejados com técnica e sensibilidade, do preventivo à estética.</p>
+    </div>
+    <div class="grade-servicos">
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-sparkle"/></svg></div>
+        <h3>Clareamento dental</h3>
+        <p>Sorriso mais branco e uniforme com técnicas seguras e resultado duradouro.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-bridge"/></svg></div>
+        <h3>Dentaduras e pontes</h3>
+        <p>Próteses confortáveis e naturais para recuperar função e estética.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-implant"/></svg></div>
+        <h3>Implantes dentários</h3>
+        <p>Reposição definitiva de dentes perdidos com tecnologia moderna.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-canal"/></svg></div>
+        <h3>Canal (Endodontia)</h3>
+        <p>Tratamento de canal com conforto para salvar o dente e aliviar a dor.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-extracao"/></svg></div>
+        <h3>Extrações</h3>
+        <p>Procedimentos seguros e cuidadosos, do simples ao mais complexo.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-limpeza"/></svg></div>
+        <h3>Limpeza e restauração</h3>
+        <p>Prevenção e cuidado do dia a dia para manter sua saúde bucal em dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-visual reveal">
+      <svg class="marca-agua-dente icon-line"><use href="#icon-tooth"/></svg>
+      <div class="par-estatisticas">
+        <div class="estatistica">
+          <div class="numero-grande">5,0</div>
+          <div class="numero-legenda">nota média no Google</div>
+        </div>
+        <div class="estatistica">
+          <div class="numero-grande">2,8 mil+</div>
+          <div class="numero-legenda">seguidores no Instagram</div>
+        </div>
+      </div>
+      <ul class="sobre-lista">
+        <li>Cuidado integrado e especializado em cada caso</li>
+        <li>Atendimento em Posse - GO</li>
+        <li>Equipe atenta a estética e função</li>
+        <li>Nota 5,0 no Google, com 18 avaliações</li>
+      </ul>
+      <div class="citacao-clinica">
+        <svg class="icon-line"><use href="#icon-quote"/></svg>
+        <p>Referência em odontologia. Cuidado integrado e especializado, em cada sorriso.</p>
+      </div>
+    </div>
+    <div class="sobre-texto reveal">
+      <span class="rotulo">Sobre a Vitta</span>
+      <h2>Técnica, sensibilidade e cuidado em cada atendimento</h2>
+      <p>A Vitta Odontologia é referência em odontologia em Posse - GO, unindo técnica apurada e olhar estético para cuidar do seu sorriso do jeito certo.</p>
+      <p>De tratamentos preventivos como limpeza e restauração a procedimentos mais complexos como implantes e canal, cada caso é planejado com atenção aos detalhes — porque odontologia também é arte.</p>
+      <a href="https://wa.me/5562999377675?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Vitta%20Odontologia." class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> Fale com a Vitta</a>
+    </div>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Onde estamos</span>
+      <h2>Nossa localização</h2>
+      <p>Atendimento em Posse - GO, no St. Augusto José Valente I.</p>
+    </div>
+    <div class="card-local reveal">
+      <div>
+        <span class="tag">Vitta Odontologia</span>
+        <h3>R. Dezenove de Julho, Qd. 12, Lt. 01, Sala 02</h3>
+        <div class="lista-info-local">
+          <div class="info-linha">
+            <span class="icone"><svg class="icon-line"><use href="#icon-pin"/></svg></span>
+            <div>St. Augusto José Valente I, Posse, GO, 73900-000</div>
+          </div>
+          <div class="info-linha">
+            <span class="icone"><svg class="icon-line"><use href="#icon-clock"/></svg></span>
+            <div>Seg. a sex.: 08h às 12h e 14h às 19h</div>
+          </div>
+          <div class="info-linha">
+            <span class="icone"><svg class="icon-line"><use href="#icon-phone"/></svg></span>
+            <div>(62) 99937-7675</div>
+          </div>
+        </div>
+        <div class="acoes">
+          <a class="btn btn-whatsapp" href="https://wa.me/5562999377675" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Vitta+Odontologia%2C+R.+Dezenove+de+Julho%2C+Posse%2C+GO%2C+73900-000" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-pin"/></svg> Ver rotas</a>
+        </div>
+      </div>
+      <div class="mapa-decorativo">
+        <svg class="icon-line"><use href="#icon-pin"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="avaliacoes" id="avaliacoes">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Avaliações e redes</span>
+      <h2>O que dizem sobre a Vitta</h2>
+    </div>
+    <div class="resumo-google reveal">
+      <div class="resumo-nota">
+        <div class="valor">5,0</div>
+        <div class="estrelas">
+          <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+        </div>
+        <div class="total">18 avaliações no Google</div>
+      </div>
+      <div class="resumo-barra">
+        <p>Nota máxima no Google, com avaliações de pacientes atendidos em Posse - GO.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Vitta+Odontologia+Posse+GO" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:16px;">Ver avaliações no Google</a>
+      </div>
+    </div>
+
+    <div class="card-instagram reveal">
+      <div class="icone-insta"><svg class="icon-solid"><use href="#icon-instagram"/></svg></div>
+      <div class="corpo">
+        <strong>@vittaodontologia.posse</strong>
+        <span class="seguidores">Mais de 2,8 mil seguidores</span>
+        <p>"Referência em Odontologia ✨ Cuidado integrado e especializado."</p>
+      </div>
+      <a href="https://instagram.com/vittaodontologia.posse" target="_blank" rel="noopener" class="btn btn-instagram"><svg class="icon-line"><use href="#icon-instagram"/></svg> Seguir no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="cta-final reveal">
+      <h2>Pronta para cuidar do seu sorriso?</h2>
+      <p>Agende sua consulta em poucos minutos, direto pelo WhatsApp.</p>
+      <a href="https://wa.me/5562999377675?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Vitta%20Odontologia." class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> Agendar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grade">
+      <div>
+        <a href="#topo" class="logo">
+          <svg class="logo-icone"><use href="#marca-vitta"/></svg>
+          <span class="logo-texto">
+            <span class="marca">VITTA</span>
+            <span class="submarca">Odontologia</span>
+          </span>
+        </a>
+        <p>Referência em odontologia em Posse - GO. Cuidado integrado e especializado.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5562999377675">(62) 99937-7675</a></li>
+          <li><a href="https://wa.me/5562999377675" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/vittaodontologia.posse" target="_blank" rel="noopener">@vittaodontologia.posse</a></li>
+          <li>Seg. a sex.: 08h–12h e 14h–19h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <ul>
+          <li>R. Dezenove de Julho, Qd. 12, Lt. 01, Sala 02</li>
+          <li>St. Augusto José Valente I</li>
+          <li>Posse, GO, 73900-000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-baixo">
+      © 2026 Vitta Odontologia. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5562999377675?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Vitta%20Odontologia." class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg class="icon-line"><use href="#icon-message"/></svg>
+</a>
+
+<script>
+  const botaoMenu = document.getElementById('botao-menu-mobile');
+  const menu = document.getElementById('menu-principal');
+  botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('aberto');
+  });
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => menu.classList.remove('aberto'));
+  });
+
+  const cabecalho = document.querySelector('header');
+  const aoRolar = () => cabecalho.classList.toggle('rolou', window.scrollY > 8);
+  aoRolar();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  const elementosRevelar = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visivel');
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -10px 0px' });
+    elementosRevelar.forEach((el) => observador.observe(el));
+    setTimeout(() => elementosRevelar.forEach((el) => el.classList.add('visivel')), 1200);
+  } else {
+    elementosRevelar.forEach((el) => el.classList.add('visivel'));
+  }
+</script>
+
+</body>
+</html>
