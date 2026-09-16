@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Yassumitsu Odontologia | Posse e Campos Belos - GO</title>
+<meta name="description" content="Há 26 anos elevando o padrão do seu sorriso. Clareamento dental, implantes, dentaduras, odontopediatria e harmonização orofacial em Posse e Campos Belos - GO. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul-escuro: #26190f;
+    --verde-agua: #8a6428;
+    --verde-agua-claro: #e2c079;
+    --dourado: #d1ab6c;
+    --texto: #2b2018;
+    --texto-claro: #7c6f5d;
+    --fundo: #faf7f1;
+    --branco: #ffffff;
+    --sombra: 0 10px 30px rgba(38, 25, 15, 0.14);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  body {
+    font-family: 'Work Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3 { font-family: 'Fraunces', Georgia, 'Times New Roman', serif; line-height: 1.2; text-wrap: balance; }
+
+  a { color: inherit; text-decoration: none; }
+
+  img, svg { max-width: 100%; display: block; }
+
+  :focus-visible {
+    outline: 2px solid var(--dourado);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  section[id], #topo { scroll-margin-top: 84px; }
+
+  .icon-line { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .icon-solid { fill: currentColor; stroke: none; }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- Header ---------- */
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #efe6d4;
+    transition: box-shadow 0.25s ease;
+  }
+
+  header.rolou { box-shadow: 0 8px 24px rgba(38, 25, 15, 0.08); }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .logo-icone {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .logo-texto .marca {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--azul-escuro);
+    letter-spacing: 1.5px;
+  }
+
+  .logo-texto .submarca {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #a8813f;
+    text-transform: uppercase;
+  }
+
+  footer .logo-texto .marca { color: white; }
+  footer .logo-texto .submarca { color: var(--dourado); }
+
+  nav.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  nav.menu-principal a {
+    position: relative;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--texto-claro);
+    transition: color 0.2s;
+    padding-bottom: 2px;
+  }
+
+  nav.menu-principal a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--verde-agua);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+
+  nav.menu-principal a:hover { color: var(--verde-agua); }
+  nav.menu-principal a:hover::after { transform: scaleX(1); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s;
+  }
+
+  .btn svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+  .btn-whatsapp {
+    background: #25d366;
+    color: white;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  }
+
+  .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(37, 211, 102, 0.45); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--azul-escuro);
+    border: 1.5px solid var(--azul-escuro);
+  }
+
+  .btn-outline:hover { background: var(--azul-escuro); color: white; }
+
+  #botao-menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--azul-escuro);
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  #botao-menu-mobile svg { width: 24px; height: 24px; }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    position: relative;
+    background: radial-gradient(circle at 15% 20%, #4a3016 0%, var(--azul-escuro) 55%, #150d07 100%);
+    color: white;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 85% 15%, rgba(226, 192, 121, 0.22), transparent 45%),
+      radial-gradient(circle at 90% 80%, rgba(209, 171, 108, 0.18), transparent 40%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    padding: 90px 24px 70px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .selo-anos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: var(--dourado);
+  }
+
+  .selo-anos svg { width: 15px; height: 15px; }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 18px;
+  }
+
+  .hero h1 span { color: var(--dourado); }
+
+  .hero p.subtitulo {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 34px; }
+
+  .hero-avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+  }
+
+  .estrelas { display: inline-flex; align-items: center; gap: 3px; color: var(--dourado); }
+  .estrelas svg { width: 16px; height: 16px; }
+  .resumo-nota .estrelas { justify-content: center; margin: 10px 0; }
+  .resumo-nota .estrelas svg { width: 20px; height: 20px; }
+
+  .hero-avaliacao strong { font-size: 1.15rem; }
+
+  .hero-cartao {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-cartao h3 {
+    font-family: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dourado);
+    margin-bottom: 18px;
+  }
+
+  .info-linha {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+  }
+
+  .info-linha:last-child { border-bottom: none; }
+
+  .info-linha .icone { flex-shrink: 0; color: var(--dourado); }
+  .info-linha .icone svg { width: 20px; height: 20px; }
+
+  .status-aberto {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #6fe3a3;
+    font-weight: 700;
+  }
+
+  .status-aberto::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6fe3a3;
+  }
+
+  /* ---------- Faixa de destaques ---------- */
+
+  .faixa-destaques {
+    background: var(--branco);
+    border-bottom: 1px solid #efe6d4;
+  }
+
+  .faixa-destaques .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 34px 24px;
+  }
+
+  .destaque {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .destaque .icone {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #f5ecd8;
+    color: var(--verde-agua);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .destaque .icone svg { width: 22px; height: 22px; }
+
+  .destaque strong { display: block; font-size: 0.95rem; color: var(--azul-escuro); }
+  .destaque span { font-size: 0.85rem; color: var(--texto-claro); }
+
+  /* ---------- Seções gerais ---------- */
+
+  section { padding: 80px 0; }
+
+  .cabecalho-secao {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 50px;
+  }
+
+  .rotulo {
+    display: inline-block;
+    color: var(--verde-agua);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .cabecalho-secao h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--azul-escuro);
+    margin-bottom: 14px;
+  }
+
+  .cabecalho-secao p { color: var(--texto-claro); font-size: 1.05rem; }
+
+  /* ---------- Serviços ---------- */
+
+  .grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .card-servico {
+    background: var(--branco);
+    border-radius: 18px;
+    padding: 32px 26px;
+    box-shadow: var(--sombra);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #ece2cd;
+  }
+
+  .card-servico:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(38, 25, 15, 0.16); }
+
+  .card-servico .icone {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--verde-agua), var(--azul-escuro));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .card-servico .icone svg { width: 26px; height: 26px; transition: transform 0.3s ease; }
+  .card-servico:hover .icone svg { transform: scale(1.12) rotate(-4deg); }
+
+  .card-servico h3 { font-size: 1.15rem; color: var(--azul-escuro); margin-bottom: 8px; }
+  .card-servico p { color: var(--texto-claro); font-size: 0.95rem; }
+
+  /* ---------- Sobre ---------- */
+
+  .sobre {
+    background: var(--branco);
+  }
+
+  .sobre .container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .sobre-visual {
+    background: linear-gradient(160deg, var(--verde-agua) 0%, var(--azul-escuro) 100%);
+    border-radius: 24px;
+    padding: 46px 34px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .marca-agua-dente {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    right: -30px;
+    bottom: -30px;
+    opacity: 0.08;
+    stroke-width: 0.9;
+  }
+
+  .par-estatisticas {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .estatistica .numero-grande {
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: 'Fraunces', Georgia, serif;
+    font-variant-numeric: tabular-nums;
+    color: var(--dourado);
+    line-height: 1;
+  }
+
+  .estatistica .numero-legenda {
+    font-size: 0.92rem;
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .citacao-clinica {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.92rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .citacao-clinica svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--dourado); }
+
+  .sobre-lista { display: grid; gap: 16px; }
+
+  .sobre-lista li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+
+  .sobre-lista li::before { content: "✓"; color: var(--verde-agua-claro); font-weight: 700; }
+
+  .sobre-texto h2 { color: var(--azul-escuro); font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 20px; }
+  .sobre-texto p { color: var(--texto-claro); margin-bottom: 16px; font-size: 1.03rem; }
+
+  /* ---------- Unidades ---------- */
+
+  .grade-unidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .card-unidade {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 34px;
+    box-shadow: var(--sombra);
+    border: 1px solid #ece2cd;
+  }
+
+  .card-unidade .tag {
+    display: inline-block;
+    background: #f5ecd8;
+    color: var(--verde-agua);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+
+  .card-unidade h3 { color: var(--azul-escuro); font-size: 1.3rem; margin-bottom: 12px; }
+
+  .card-unidade .endereco {
+    color: var(--texto-claro);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    min-height: 66px;
+  }
+
+  .card-unidade .acoes { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .card-unidade .acoes .btn { padding: 10px 18px; font-size: 0.88rem; }
+
+  /* ---------- Avaliações ---------- */
+
+  .avaliacoes { background: var(--branco); }
+
+  .resumo-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #f8f0dc, #faf7f1);
+    border-radius: 24px;
+    padding: 44px;
+    border: 1px solid #f0e6d1;
+  }
+
+  .resumo-nota { text-align: center; }
+
+  .resumo-nota .valor {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variant-numeric: tabular-nums;
+    font-size: 3.4rem;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .resumo-nota .estrelas { font-size: 1.4rem; margin: 8px 0; }
+
+  .resumo-nota .total { color: var(--texto-claro); font-size: 0.9rem; }
+
+  .resumo-barra { flex: 1; min-width: 260px; max-width: 420px; }
+
+  .resumo-barra p { color: var(--texto-claro); font-size: 1rem; margin-bottom: 6px; }
+
+  .grade-avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 32px;
+  }
+
+  .card-avaliacao {
+    background: var(--branco);
+    border: 1px solid #ece2cd;
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: var(--sombra);
+  }
+
+  .card-avaliacao .icone-aspas { color: #cfe4e0; margin-bottom: 10px; }
+  .card-avaliacao .icone-aspas svg { width: 26px; height: 26px; }
+
+  .card-avaliacao p.depoimento {
+    color: var(--texto);
+    font-size: 0.98rem;
+    margin-bottom: 16px;
+    min-height: 66px;
+  }
+
+  .card-avaliacao .autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-avaliacao .autor strong { color: var(--azul-escuro); font-size: 0.92rem; }
+  .card-avaliacao .autor .estrelas svg { width: 13px; height: 13px; }
+
+  /* ---------- Revelação ao rolar ---------- */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visivel { opacity: 1; transform: translateY(0); }
+
+  .grade-servicos .reveal:nth-child(2),
+  .grade-unidades .reveal:nth-child(2),
+  .grade-avaliacoes .reveal:nth-child(2) { transition-delay: 0.1s; }
+
+  .grade-servicos .reveal:nth-child(3),
+  .grade-avaliacoes .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+  .grade-servicos .reveal:nth-child(5) { transition-delay: 0.1s; }
+  .grade-servicos .reveal:nth-child(6) { transition-delay: 0.2s; }
+
+  /* ---------- CTA final ---------- */
+
+  .cta-final {
+    background: radial-gradient(circle at 20% 30%, #4a3016, var(--azul-escuro) 70%);
+    color: white;
+    text-align: center;
+    border-radius: 28px;
+    margin: 0 24px;
+    padding: 60px 30px;
+  }
+
+  .cta-final h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 14px; }
+  .cta-final p { color: rgba(255, 255, 255, 0.85); margin-bottom: 30px; font-size: 1.05rem; }
+
+  /* ---------- Rodapé ---------- */
+
+  footer {
+    background: #170f09;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 60px 0 26px;
+    margin-top: 60px;
+  }
+
+  .footer-grade {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-grade h4 { color: white; font-size: 1rem; margin-bottom: 18px; }
+
+  .footer-grade .logo { color: white; margin-bottom: 14px; }
+
+  .footer-grade p, .footer-grade a { font-size: 0.9rem; color: rgba(255, 255, 255, 0.68); }
+
+  .footer-grade ul { list-style: none; display: grid; gap: 10px; }
+
+  .footer-grade a:hover { color: var(--verde-agua-claro); }
+
+  .footer-baixo {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 22px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* ---------- Botão flutuante WhatsApp ---------- */
+
+  .whatsapp-flutuante {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 200;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+    animation: pulsar 2.4s infinite;
+  }
+
+  .whatsapp-flutuante svg { width: 27px; height: 27px; }
+
+  .textura-grao {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  @keyframes pulsar {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+    70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+
+  /* ---------- Responsivo ---------- */
+
+  @media (max-width: 900px) {
+    .header-inner .btn-whatsapp { display: none; }
+    #botao-menu-mobile { display: block; }
+
+    nav.menu-principal {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 20px 24px;
+      gap: 16px;
+      box-shadow: var(--sombra);
+      opacity: 0;
+      transform: translateY(-8px);
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    }
+
+    nav.menu-principal.aberto {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .hero-inner { grid-template-columns: 1fr; padding-top: 50px; }
+    .faixa-destaques .container { grid-template-columns: repeat(2, 1fr); }
+    .grade-servicos { grid-template-columns: repeat(2, 1fr); }
+    .sobre .container { grid-template-columns: 1fr; }
+    .grade-unidades { grid-template-columns: 1fr; }
+    .grade-avaliacoes { grid-template-columns: 1fr; }
+    .footer-grade { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .faixa-destaques .container { grid-template-columns: 1fr; }
+    .grade-servicos { grid-template-columns: 1fr; }
+    .resumo-google { flex-direction: column; }
+    .par-estatisticas { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="textura-grao" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="dourado-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9cf9c"/>
+      <stop offset="0.5" stop-color="#c9a25f"/>
+      <stop offset="1" stop-color="#9c7638"/>
+    </linearGradient>
+    <symbol id="marca-yassumitsu" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="17" fill="none" stroke="url(#dourado-grad)" stroke-width="2.6"/>
+      <rect x="12.5" y="12.5" width="15" height="15" fill="url(#dourado-grad)" transform="rotate(45 20 20)"/>
+      <circle cx="20" cy="14" r="1.1" fill="#26190f" opacity="0.35"/>
+      <circle cx="14" cy="20" r="1.1" fill="#26190f" opacity="0.35"/>
+      <circle cx="26" cy="20" r="1.1" fill="#26190f" opacity="0.35"/>
+      <circle cx="20" cy="26" r="1.1" fill="#26190f" opacity="0.35"/>
+    </symbol>
+
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-7.2 7-12.2A7 7 0 0 0 5 8.8C5 13.8 12 21 12 21z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2C11.8 18.6 5.4 12.2 5 5.2A2 2 0 0 1 7 3.5z"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3.3 6.5L4 20l1.3-3.5A7.9 7.9 0 0 1 4 12z"/></symbol>
+    <symbol id="icon-trophy" viewBox="0 0 24 24"><path d="M7 4h10v3a5 5 0 0 1-10 0V4z"/><path d="M7 5H4.5A2.5 2.5 0 0 0 7 7.5M17 5h2.5A2.5 2.5 0 0 1 17 7.5"/><path d="M12 12v3"/><path d="M9 20h6"/><path d="M10 20c0-1.7.7-3 2-3s2 1.3 2 3"/></symbol>
+    <symbol id="icon-tooth" viewBox="0 0 24 24"><path d="M12 4c-1.4 0-2.2.6-3.3.6S6.9 4 5.6 4C3.9 4 2.5 5.7 2.5 8c0 2.7 1.4 4.8 1.8 7.3.3 1.9.8 3.4 1.9 3.4s1.4-2.4 1.7-4.1c.2-.9.5-1.5 1.1-1.5s.9.6 1.1 1.5c.3 1.7.6 4.1 1.7 4.1s1.6-1.5 1.9-3.4c.4-2.5 1.8-4.6 1.8-7.3 0-2.3-1.4-4-3.1-4-1.3 0-2.1.6-3.1.6z"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 3c.7 3.8 2.6 5.7 6.3 6.3-3.7.6-5.6 2.5-6.3 6.3-.7-3.8-2.6-5.7-6.3-6.3 3.7-.6 5.6-2.5 6.3-6.3z"/><path d="M18.5 15.5c.3 1.7 1.1 2.5 2.8 2.8-1.7.3-2.5 1.1-2.8 2.8-.3-1.7-1.1-2.5-2.8-2.8 1.7-.3 2.5-1.1 2.8-2.8z"/></symbol>
+    <symbol id="icon-bridge" viewBox="0 0 24 24"><path d="M3 8c0-2.2 1.8-4 4-4s4 1.8 4 4v9c0 .8-.7 1.5-1.5 1.5S8 17.8 8 17v-4"/><path d="M13 8c0-2.2 1.8-4 4-4s4 1.8 4 4v9c0 .8-.7 1.5-1.5 1.5S18 17.8 18 17v-4"/></symbol>
+    <symbol id="icon-implant" viewBox="0 0 24 24"><path d="M9 3h6l-1 4H10L9 3z"/><path d="M9.5 7 8 21h8l-1.5-14"/><path d="M9.8 10h4.4M9.5 13h5M9.7 16h4.6"/></symbol>
+    <symbol id="icon-child" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.7 10.3h.01M15.3 10.3h.01"/><path d="M8.3 14.2c1 1.3 2.3 2 3.7 2s2.7-.7 3.7-2"/></symbol>
+    <symbol id="icon-microscope" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+    <symbol id="icon-face" viewBox="0 0 24 24"><path d="M12 3 8.5 5.2 4.5 7 12 21l7.5-14-4-1.8L12 3z"/><path d="M4.5 7h15M9 5.2 12 12l3-6.8"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 17.1 6.1 20.2l1.3-6.5-4.9-4.5 6.6-.7L12 2.5z"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24"><path d="M7 8c-2.2 0-4 1.8-4 4v4h5v-5H5c0-1.7 1.3-3 3-3V8z"/><path d="M16 8c-2.2 0-4 1.8-4 4v4h5v-5h-3c0-1.7 1.3-3 3-3V8z"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="header-inner">
+    <a href="#topo" class="logo">
+      <svg class="logo-icone"><use href="#marca-yassumitsu"/></svg>
+      <span class="logo-texto">
+        <span class="marca">YASSUMITSU</span>
+        <span class="submarca">Odontologia</span>
+      </span>
+    </a>
+    <nav class="menu-principal" id="menu-principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a href="https://wa.me/5562999540828?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Yassumitsu." class="btn btn-whatsapp" target="_blank" rel="noopener">
+      <svg class="icon-line"><use href="#icon-message"/></svg> Agendar
+    </a>
+    <button id="botao-menu-mobile" aria-label="Abrir menu">
+      <svg class="icon-line"><use href="#icon-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="hero-inner container">
+    <div>
+      <span class="selo-anos"><svg class="icon-line"><use href="#icon-trophy"/></svg> 26 anos de tradição em odontologia</span>
+      <h1>Elevando o padrão do <span>seu sorriso</span> há 26 anos</h1>
+      <p class="subtitulo">Todas as especialidades odontológicas em um só lugar, com unidades em Posse e Campos Belos - GO.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/5562999540828?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Yassumitsu." class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg class="icon-line"><use href="#icon-message"/></svg> Agende agora via WhatsApp
+        </a>
+        <a href="#servicos" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:white;">Ver especialidades</a>
+      </div>
+      <div class="hero-avaliacao">
+        <span class="estrelas">
+          <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+        </span>
+        <strong>4,8</strong> de avaliação no Google · 44 avaliações
+      </div>
+    </div>
+
+    <div class="hero-cartao">
+      <h3>Clínica Yassumitsu Odontologia</h3>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-clock"/></svg></span>
+        <div>
+          <span class="status-aberto">Aberto agora</span><br>
+          Fecha às 18:00
+        </div>
+      </div>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-pin"/></svg></span>
+        <div>
+          Av. Nestor Balduíno de Souza, s/n — Quadra 29, Lote 10-A<br>
+          Posse, GO, 73900-016
+        </div>
+      </div>
+      <div class="info-linha">
+        <span class="icone"><svg class="icon-line"><use href="#icon-phone"/></svg></span>
+        <div>(62) 99954-0828</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa-destaques">
+  <div class="container">
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-trophy"/></svg></span>
+      <div><strong>26 anos</strong><span>de experiência</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-tooth"/></svg></span>
+      <div><strong>Todas as especialidades</strong><span>em um só lugar</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-line"><use href="#icon-pin"/></svg></span>
+      <div><strong>2 unidades</strong><span>Posse e Campos Belos</span></div>
+    </div>
+    <div class="destaque">
+      <span class="icone"><svg class="icon-solid"><use href="#icon-star"/></svg></span>
+      <div><strong>4,8 / 5</strong><span>44 avaliações no Google</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Especialidades</span>
+      <h2>Cuidado completo para o seu sorriso</h2>
+      <p>Da estética à saúde bucal da família, oferecemos tratamentos completos com equipe especializada.</p>
+    </div>
+    <div class="grade-servicos">
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-sparkle"/></svg></div>
+        <h3>Clareamento dental</h3>
+        <p>Sorriso mais branco e uniforme com técnicas seguras e resultado duradouro.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-bridge"/></svg></div>
+        <h3>Dentaduras e pontes</h3>
+        <p>Próteses confortáveis e naturais para recuperar função e estética.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-implant"/></svg></div>
+        <h3>Implantes dentários</h3>
+        <p>Reposição definitiva de dentes perdidos com tecnologia moderna.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-child"/></svg></div>
+        <h3>Odontopediatria</h3>
+        <p>Atendimento acolhedor para o cuidado bucal das crianças desde cedo.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-microscope"/></svg></div>
+        <h3>Implantodontia</h3>
+        <p>Planejamento avançado para reabilitação oral com implantes.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="icone"><svg class="icon-line"><use href="#icon-face"/></svg></div>
+        <h3>Harmonização orofacial</h3>
+        <p>Procedimentos estéticos que valorizam o equilíbrio do seu rosto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-visual reveal">
+      <svg class="marca-agua-dente icon-line"><use href="#icon-tooth"/></svg>
+      <div class="par-estatisticas">
+        <div class="estatistica">
+          <div class="numero-grande">26</div>
+          <div class="numero-legenda">anos de clínica</div>
+        </div>
+        <div class="estatistica">
+          <div class="numero-grande">8 mil+</div>
+          <div class="numero-legenda">implantes realizados</div>
+        </div>
+      </div>
+      <ul class="sobre-lista">
+        <li>Equipe especializada em todas as áreas da odontologia</li>
+        <li>Unidades em Posse e Campos Belos - GO</li>
+        <li>Atendimento humanizado, do bebê ao idoso</li>
+        <li>Nota 4,8 no Google, com 44 avaliações</li>
+      </ul>
+      <div class="citacao-clinica">
+        <svg class="icon-line"><use href="#icon-quote"/></svg>
+        <p>Trabalhamos com implantes há mais de 20 anos no mercado e já realizamos mais de 8 mil implantes. Faça conosco o seu melhor orçamento.</p>
+      </div>
+    </div>
+    <div class="sobre-texto reveal">
+      <span class="rotulo">Sobre a clínica</span>
+      <h2>Tradição, especialização e cuidado em cada atendimento</h2>
+      <p>Há 26 anos, a Clínica Yassumitsu Odontologia acompanha o sorriso de famílias inteiras em Posse e Campos Belos, unindo tradição e atualização constante das técnicas odontológicas.</p>
+      <p>Reunimos todas as especialidades em um só lugar — de clareamento a implantes, de odontopediatria a harmonização orofacial — para que você não precise procurar mais de uma clínica para cuidar do seu sorriso.</p>
+      <a href="https://wa.me/5562999540828?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Cl%C3%ADnica%20Yassumitsu." class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> Fale com a clínica</a>
+    </div>
+  </div>
+</section>
+
+<section id="unidades">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Onde estamos</span>
+      <h2>Nossas unidades</h2>
+      <p>Atendimento perto de você, com a mesma qualidade em todas as unidades.</p>
+    </div>
+    <div class="grade-unidades">
+      <div class="card-unidade reveal">
+        <span class="tag">Unidade Posse</span>
+        <h3>Clínica Yassumitsu Odontologia</h3>
+        <p class="endereco">Augusto José Valente — Av. Nestor Balduíno de Souza, s/n, Quadra 29, Lote 10-A, Posse, GO, 73900-016<br>(62) 99954-0828</p>
+        <div class="acoes">
+          <a class="btn btn-whatsapp" href="https://wa.me/5562999540828" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Clinica+Yassumitsu+Odontologia%2C+Av.+Nestor+Balduino+de+Souza%2C+Posse%2C+GO%2C+73900-016" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-pin"/></svg> Ver rotas</a>
+        </div>
+      </div>
+      <div class="card-unidade reveal">
+        <span class="tag">Unidade Campos Belos</span>
+        <h3>Clínica Yassumitsu Odontologia</h3>
+        <p class="endereco">R. B H Foreman, 54, Campos Belos, GO, 73840-000<br>(62) 99993-2959</p>
+        <div class="acoes">
+          <a class="btn btn-whatsapp" href="https://wa.me/5562999932959?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20na%20unidade%20de%20Campos%20Belos." target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=R.+B+H+Foreman%2C+54%2C+Campos+Belos%2C+GO%2C+73840-000" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-pin"/></svg> Ver rotas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="avaliacoes" id="avaliacoes">
+  <div class="container">
+    <div class="cabecalho-secao reveal">
+      <span class="rotulo">Google Avaliações</span>
+      <h2>O que dizem sobre a clínica</h2>
+    </div>
+    <div class="resumo-google reveal">
+      <div class="resumo-nota">
+        <div class="valor">4,8</div>
+        <div class="estrelas">
+          <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+        </div>
+        <div class="total">44 avaliações no Google</div>
+      </div>
+      <div class="resumo-barra">
+        <p>Pacientes destacam o atendimento humanizado, a variedade de especialidades disponíveis em um só lugar e a tradição de 26 anos da clínica em Posse e região.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Clinica+Yassumitsu+Odontologia" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:16px;">Ver avaliações no Google</a>
+      </div>
+    </div>
+
+    <div class="grade-avaliacoes">
+      <div class="card-avaliacao reveal">
+        <div class="icone-aspas"><svg class="icon-solid"><use href="#icon-quote"/></svg></div>
+        <p class="depoimento">"Muito bom, excelentes profissionais, especialistas em todas as áreas!"</p>
+        <div class="autor">
+          <strong>Pedro Henrique</strong>
+          <span class="estrelas">
+            <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+          </span>
+        </div>
+      </div>
+      <div class="card-avaliacao reveal">
+        <div class="icone-aspas"><svg class="icon-solid"><use href="#icon-quote"/></svg></div>
+        <p class="depoimento">"Experiência excelente na clínica!"</p>
+        <div class="autor">
+          <strong>Millena Macedo</strong>
+          <span class="estrelas">
+            <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+          </span>
+        </div>
+      </div>
+      <div class="card-avaliacao reveal">
+        <div class="icone-aspas"><svg class="icon-solid"><use href="#icon-quote"/></svg></div>
+        <p class="depoimento">"Amei o resultado do meu sorriso."</p>
+        <div class="autor">
+          <strong>Leila Rodrigues</strong>
+          <span class="estrelas">
+            <svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg><svg class="icon-solid"><use href="#icon-star"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="cta-final reveal">
+      <h2>Pronto para cuidar do seu sorriso?</h2>
+      <p>Agende sua avaliação em poucos minutos, direto pelo WhatsApp.</p>
+      <a href="https://wa.me/5562999540828?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Yassumitsu." class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="icon-line"><use href="#icon-message"/></svg> Agendar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grade">
+      <div>
+        <a href="#topo" class="logo">
+          <svg class="logo-icone"><use href="#marca-yassumitsu"/></svg>
+          <span class="logo-texto">
+            <span class="marca">YASSUMITSU</span>
+            <span class="submarca">Odontologia</span>
+          </span>
+        </a>
+        <p>Há 26 anos elevando o padrão do sorriso em Posse e Campos Belos - GO.</p>
+      </div>
+      <div>
+        <h4>Unidade Posse</h4>
+        <ul>
+          <li>Av. Nestor Balduíno de Souza, s/n</li>
+          <li>Quadra 29, Lote 10-A, GO, 73900-016</li>
+          <li><a href="tel:+5562999540828">(62) 99954-0828</a></li>
+          <li>Aberto · Fecha 18:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unidade Campos Belos</h4>
+        <ul>
+          <li>R. B H Foreman, 54</li>
+          <li>Campos Belos, GO, 73840-000</li>
+          <li><a href="tel:+5562999932959">(62) 99993-2959</a></li>
+          <li>Aberto · Fecha 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-baixo">
+      © 2026 Clínica Yassumitsu Odontologia. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5562999540828?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Yassumitsu." class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg class="icon-line"><use href="#icon-message"/></svg>
+</a>
+
+<script>
+  const botaoMenu = document.getElementById('botao-menu-mobile');
+  const menu = document.getElementById('menu-principal');
+  botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('aberto');
+  });
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => menu.classList.remove('aberto'));
+  });
+
+  const cabecalho = document.querySelector('header');
+  const aoRolar = () => cabecalho.classList.toggle('rolou', window.scrollY > 8);
+  aoRolar();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+
+  const elementosRevelar = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visivel');
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -10px 0px' });
+    elementosRevelar.forEach((el) => observador.observe(el));
+    setTimeout(() => elementosRevelar.forEach((el) => el.classList.add('visivel')), 1200);
+  } else {
+    elementosRevelar.forEach((el) => el.classList.add('visivel'));
+  }
+</script>
+
+</body>
+</html>
